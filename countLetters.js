@@ -4,10 +4,10 @@ const countLetters = function (string) {
   let result = {};
   //loop over string
   for (const letter of string) {
-    console.log("letter", letter);
+    // console.log("letter", letter);
     //add a key value pair to result for each time a letter appears
     if (result[letter]) {
-      console.log("fire!")
+      // console.log("fire!")
       result[letter] += 1
     } else {
       result[letter] = 1
