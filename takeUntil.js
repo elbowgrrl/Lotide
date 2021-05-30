@@ -21,6 +21,10 @@ const takeUntil = function (array, cb) {
   return newArray;
 };
 
+// //One Liner Solution
+// const takeUntil = (array, callback) => array.slice(0, array.findIndex(callback))
+
+
 console.log(takeUntil(numbers, (x) => x < 2));
 console.log(takeUntil(words, word => word === "absorb"));
 
