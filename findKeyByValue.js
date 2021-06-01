@@ -7,14 +7,16 @@ const bestTVShowsByGenre = {
 };
 
 const findKeyByValue = function (object, value) {
+  let returnVal = undefined;
   //create array of keys
   keyArray = Object.keys(object);
   //iterate over object
   for (const key in object) {
     if (object[key] === value) {
-      return key;
+      returnVal =  key;
     }
   }
+  return returnVal;
 };
 
 console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));

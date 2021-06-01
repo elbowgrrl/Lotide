@@ -1,24 +1,4 @@
-const eqArrays = function (array1, array2) {
-  if (array1.length !== array2.length) {
-    return false;
-  }
-  for (let element of array1) {
-    if (array1[element] !== array2[element]) {
-      return false;
-    }
-  }
-  return true;
-};
 
-const assertArraysEqual = function (arg1, arg2) {
-  if (eqArrays(arg1, arg2) !== true) {
-    return `‼️‼️‼️ Assertion Failed! ${arg1} !== ${arg2} ‼️‼️‼️‼️`;
-  }
-
-  if (eqArrays(arg1, arg2) === true) {
-  }
-  return `👍👍👍 Assertion Passed! ${arg1} === ${arg2}👍👍👍`;
-};
 
 //define a function that takes two arrays and returns the first array without any of the elements from the second array
 //define a function that takes two arrays
