@@ -24,19 +24,4 @@ const eqObjects = function (obj1, obj2) {
   return true;
 };
 
-//TEST CODE
-
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-console.log("true", eqObjects(cd, dc)); // => true
-
-const cd2 = { c: '1', d: ['2', 3, 4] };
-console.log("false", eqObjects(cd, cd2)); // => false
-
-const ab = { a: '1', b: '2' };
-const ba = { b: '2', a: '1' };
-const abc = { a: '1', b: '2', c: '3' };
-console.log(eqObjects(ab, ba)); // => true
-console.log(eqObjects(ab, abc)); // => false
-
 module.exports = eqObjects;
