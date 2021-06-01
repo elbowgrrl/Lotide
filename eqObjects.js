@@ -1,17 +1,7 @@
 //define a function which compares two objects. If the objects are identical, it returns true.
 //Otherwise. it returns false.
 
-const eqArrays = function (array1, array2) {
-  if (array1.length !== array2.length) {
-    return false;
-  }
-  for (let element of array1) {
-    if (array1[element] !== array2[element]) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require('./eqArrays');
 
 const eqObjects = function (obj1, obj2) {
   //determine if objects have same amount of keys
@@ -48,3 +38,5 @@ const ba = { b: "2", a: "1" };
 const abc = { a: "1", b: "2", c: "3" };
 console.log(eqObjects(ab, ba)); // => true
 console.log(eqObjects(ab, abc)); // => false
+
+module.exports = eqObjects;

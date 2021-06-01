@@ -19,4 +19,4 @@ const countLetters = function (string) {
   return result;
 };
 
-console.log(countLetters("happy birthday to you"));
+module.exports = countLetters;

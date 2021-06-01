@@ -28,3 +28,5 @@ const takeUntil = function (array, cb) {
 console.log(takeUntil(numbers, (x) => x < 2));
 console.log(takeUntil(words, word => word === "absorb"));
 
+module.exports = takeUntil;
+

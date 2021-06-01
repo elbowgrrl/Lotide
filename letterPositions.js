@@ -14,3 +14,5 @@ const letterPositions = function (sentence) {
 };
 
 console.log(letterPositions("happy birthday to you"));
+
+module.exports = letterPositions;

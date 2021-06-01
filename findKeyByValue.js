@@ -20,3 +20,5 @@ const findKeyByValue = function (object, value) {
 console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
 console.log(findKeyByValue(bestTVShowsByGenre, "The Expanse"));
 console.log(findKeyByValue(bestTVShowsByGenre, "string"));
+
+module.exports = findKeyByValue;

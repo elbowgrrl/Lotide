@@ -53,6 +53,8 @@ const without = function(array1, withoutArray) {
 
 console.log(without([1, 2, 3, 4], [1, 3]));
 
+module.exports = without;
+
 
 
 

@@ -10,3 +10,4 @@ const map = (array, cb) => {
 
 console.log(map(words, word => { return `${word}ing`}))
 
+module.exports = map;
