@@ -1,4 +1,3 @@
-const words = ["flower", "dance", "absorb", "drink", "clap", "jump"]
 // a function which works like .map
 const map = (array, cb) => {
   const mappedArray = [];
@@ -8,6 +7,8 @@ const map = (array, cb) => {
   return mappedArray;
 }
 
-console.log(map(words, word => { return `${word}ing`}))
+// //MANUAL TEST CODE
+// const words = ["flower", "dance", "absorb", "drink", "clap", "jump"]
+// console.log(map(words, word => { return `${word}ing`}))
 
 module.exports = map;

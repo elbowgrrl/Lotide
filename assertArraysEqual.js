@@ -18,8 +18,5 @@ const assertArraysEqual = function (arg1, arg2) {
   console.log(`👍👍👍 Assertion Passed! ${arg1} === ${arg2}👍👍👍`);
 };
 
-// //Manual test code. Does not have mocha/chai test file.
-// assertArraysEqual([1, 2, 3], [1, 2, 3]);
-// assertArraysEqual([1, 2, 3], [1, 2, 4]);
 
 module.exports = assertArraysEqual

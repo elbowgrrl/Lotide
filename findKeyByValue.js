@@ -1,11 +1,5 @@
 //define a function that scans an object and returns the key at the provided value
 
-const bestTVShowsByGenre = {
-  sci_fi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama: "The Wire",
-};
-
 const findKeyByValue = function (object, value) {
   let returnVal = undefined;
   //create array of keys
@@ -18,9 +12,5 @@ const findKeyByValue = function (object, value) {
   }
   return returnVal;
 };
-
-console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
-console.log(findKeyByValue(bestTVShowsByGenre, "The Expanse"));
-console.log(findKeyByValue(bestTVShowsByGenre, "string"));
 
 module.exports = findKeyByValue;

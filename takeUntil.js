@@ -24,9 +24,9 @@ const takeUntil = function (array, cb) {
 // //One Liner Solution
 // const takeUntil = (array, callback) => array.slice(0, array.findIndex(callback))
 
-
-console.log(takeUntil(numbers, (x) => x < 2));
-console.log(takeUntil(words, word => word === "absorb"));
+// //MANUAL TEST CODE
+// console.log(takeUntil(numbers, (x) => x < 2));
+// console.log(takeUntil(words, word => word === "absorb"));
 
 module.exports = takeUntil;
 
